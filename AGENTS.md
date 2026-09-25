@@ -25,6 +25,7 @@ after the first push:
 
 ```sh
 gh api -X POST repos/smith-wiki/<slug>/pages -f 'source[branch]=main' -f 'source[path]=/'
+gh repo edit smith-wiki/<slug> --homepage https://smith.wiki/<slug>/
 gh repo edit smith-wiki/<slug> --add-topic smith-wiki-research
 gh api repos/smith-wiki/smith-wiki.github.io/dispatches -f event_type=research-published
 ```
@@ -47,10 +48,8 @@ minutes; edit an existing page rather than add a near-duplicate.
 
 ## Pages
 
-Structure is free. `README.md` states the question, links to where to start
-reading, and, for a public research, includes the published site URL
-`https://smith.wiki/<slug>/`. Private repositories have no published site.
-By default, write short linked Markdown pages, one idea each,
+Structure is free. `README.md` states the question and links to where to
+start reading. By default, write short linked Markdown pages, one idea each,
 titled by a `# heading` that states the idea, linking related pages with
 relative `.md` links and saying why they relate. Cite source URLs on the page
 that relies on them. No build configuration: GitHub Pages renders the Markdown.
