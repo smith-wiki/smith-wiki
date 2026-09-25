@@ -46,10 +46,18 @@ main. In chat, answer briefly and link the pages you added or changed
 private). Never write more in one turn than the user can read in a few
 minutes; edit an existing page rather than add a near-duplicate.
 
+Make the conversation visible: after each research question, append its English
+paraphrase and a brief answer to `README.md` in chronological order, linking the
+card that supports the answer. Mark unresolved questions open and fill them in
+when answered. This is a growing question-and-answer index, not a transcript.
+
 ## Pages
 
-Structure is free. `README.md` states the question and links to where to
-start reading. By default, write short linked Markdown pages, one idea each,
-titled by a `# heading` that states the idea, linking related pages with
-relative `.md` links and saying why they relate. Cite source URLs on the page
-that relies on them. No build configuration: GitHub Pages renders the Markdown.
+Structure is free. `README.md` states the subject, shows the growing
+question-and-answer index, and links where to start reading. Prefer small,
+self-contained atomic Markdown cards in the spirit of Luhmann: one answerable
+question or conclusion per card, with a `# heading` stating its takeaway.
+Cite source URLs on the card that relies on them; link related cards with
+relative `.md` links and say how they relate. Keep detailed procedures in
+linked guides when they cannot fit on a card. No build configuration: GitHub
+Pages renders the Markdown.
